@@ -33,16 +33,16 @@
 | E1_UART_RX    | 1.1  |
 
 ### mcu_xye
-X: X / B motor
-Y: Y / A motor
-E0: Extruder motor
-E1: PT100 step stick
+X: X / B motor  
+Y: Y / A motor  
+E0: Extruder motor  
+E1: PT100 step stick  
 E1_UART_RX: extruder > sensor_pin
 
 ### mcu_z
-X: Z0 motor
-Y: Z1 motor
-Z: Z2 motor
+X: Z0 motor  
+Y: Z1 motor  
+Z: Z2 motor  
 E0: Z3 motor
 
 ## Endstops
