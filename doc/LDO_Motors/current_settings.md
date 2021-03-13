@@ -13,3 +13,10 @@ The LDO 42STH130-1684 is specified with a maximum current of 1.68 Amps. Maximum 
 
 ## Maximums
 Whatever the maximum calculated current of the motor is, the maximum capacity of the 2209 driver is 1.2 Amps. Also, the calculation is for the maximum the motor can handle. It is recommended to start with smaller values and work from there.
+
+## LDO motor kit for Voron 2.4
+| Motor                     | Peak Current | Max Run/RMS Current | Run Current | Hold Current |
+|---------------------------|--------------|---------------------|-------------|--------------|
+| 42STH20-1004AS (Extruder) | 1.0A         | 0.707A              | 0.6A        | 0.4A         |
+| 42STH40-2004MAH (A/B)     | 2.0A         | 1.414A              | 1.1A        | 0.8A         |
+| 42STH48-2004AC (Z)        | 2.0A         | 1.414A              | 1.1A        | 0.8A         |
