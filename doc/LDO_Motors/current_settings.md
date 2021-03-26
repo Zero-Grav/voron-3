@@ -17,6 +17,6 @@ Whatever the maximum calculated current of the motor is, the maximum capacity of
 ## LDO motor kit for Voron 2.4
 | Motor                     | Peak Current | Max Run/RMS Current | Run Current | Hold Current |
 |---------------------------|--------------|---------------------|-------------|--------------|
-| 42STH20-1004AS (Extruder) | 1.0A         | 0.707A              | 0.6A        | 0.4A         |
+| 42STH20-1004AS (Extruder) | 1.0A         | 0.707A              | 0.5A        | 0.4A         |
 | 42STH40-2004MAH (A/B)     | 2.0A         | 1.414A              | 1.1A        | 0.8A         |
 | 42STH48-2004AC (Z)        | 2.0A         | 1.414A              | 1.1A        | 0.8A         |
