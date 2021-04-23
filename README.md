@@ -18,3 +18,27 @@ Load these config files by adding an include statement to printer.cfg:
 [include voron-2/klipper_config/*.cfg]
 ```
 
+## Slicer configuration
+
+## Start gcode
+PrusaSlicer:  
+```
+M140 S0
+M104 S0 ; uncomment to remove set&wait temp gcode added automatically after this start gcode
+print_start EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature] NOZZLE_SIZE=[nozzle_diameter] FILAMENT_TYPE=[filament_type]
+```
+
+SuperSlicer:  
+```
+M190 S0
+M109 S0 ; uncomment to remove set&wait temp gcode added automatically after this start gcode
+print_start EXTRUDER_TEMP={first_layer_temperature[initial_extruder] + extruder_temperature_offset[initial_extruder]} BED_TEMP=[first_layer_bed_temperature] CHAMBER_TEMP=[chamber_temperature] NOZZLE_SIZE=[nozzle_diameter] FILAMENT_TYPE=[filament_type]
+```
+
+
+## End gcode
+
+PrusaSlicer and SuperSlicer:
+```
+print_end
+```
