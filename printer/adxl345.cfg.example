@@ -1,0 +1,16 @@
+[mcu adxl]
+serial: /dev/serial/by-path/blue-pill-usb-id
+restart_method: command
+
+[adxl345]
+cs_pin: adxl:pb12
+spi_software_sclk_pin: adxl:pb13
+spi_software_mosi_pin: adxl:pb15
+spi_software_miso_pin: adxl:pb14
+
+axes_map: z,x,y
+
+[resonance_tester]
+accel_chip: adxl345
+probe_points:
+  150, 150, 20
