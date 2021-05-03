@@ -3,10 +3,10 @@ serial: /dev/serial/by-path/blue-pill-usb-id
 restart_method: command
 
 [adxl345]
-cs_pin: adxl:pb12
-spi_software_sclk_pin: adxl:pb13
-spi_software_mosi_pin: adxl:pb15
-spi_software_miso_pin: adxl:pb14
+cs_pin: adxl:PA0
+spi_software_sclk_pin: adxl:PA1
+spi_software_mosi_pin: adxl:PA2
+spi_software_miso_pin: adxl:PA3
 
 axes_map: z,x,y
 
@@ -14,3 +14,14 @@ axes_map: z,x,y
 accel_chip: adxl345
 probe_points:
   150, 150, 20
+
+##############################
+## Wiring Blue Pill to ADXL345
+## Blue Pill -> ADXL345
+## G         -> GND
+## 3.3       -> VCC
+## A3        -> SDO
+## A2        -> SDA
+## A1        -> SCL
+## A0        -> CS
+##############################
