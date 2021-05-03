@@ -1,5 +1,5 @@
 [mcu adxl]
-serial: /dev/serial/by-path/blue-pill-usb-id
+serial: /dev/serial/by-id/usb-Klipper_stm32f103xe_9198050232124347524B4E00-if00
 restart_method: command
 
 [adxl345]
@@ -8,7 +8,7 @@ spi_software_sclk_pin: adxl:PA1
 spi_software_mosi_pin: adxl:PA2
 spi_software_miso_pin: adxl:PA3
 
-axes_map: z,x,y
+axes_map: z,y,x
 
 [resonance_tester]
 accel_chip: adxl345
