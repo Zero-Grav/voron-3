@@ -1,21 +1,20 @@
 # klipper-config
 
 Klipper config for Voron 2.4 
-- 2x SKR 1.4 Turbo
-- 7x TMC2209
+- Spider v1.0
+- 2x TMC2226
+- 5x TMC2209
 - 1.8 degree steppers Z/E (LDO)
 - 0.9 degree steppers for A/B (LDO)
 
 ## Setup
-Clone this repository into `klipper_config`:
-```
-cd klipper_config
-git clone https://github.com/nielsvz/voron-2.git
-```
 
-Load these config files by adding an include statement to printer.cfg:
-```
-[include voron-2/klipper_config/*.cfg]
+Clone this repository into `klipper_config`:
+```shell
+cd
+mv klipper_config klipper_config_old
+
+git clone https://github.com/nielsvz/voron-2.git klipper_config
 ```
 
 ### Dockable probe (temporary until merged with Klipper)
