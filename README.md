@@ -18,6 +18,18 @@ Load these config files by adding an include statement to printer.cfg:
 [include voron-2/klipper_config/*.cfg]
 ```
 
+### Dockable probe (temporary until merged with Klipper)
+```shell
+cd klipper
+# Only add this remote if you haven't done so already.
+git remote add mental https://github.com/mental405/klipper.git
+
+# Force update on Klipper and checkout only the dockable_probe module
+git fetch --prune --all
+git reset --hard origin/master
+git checkout mental/work-annex-probe klippy/extras/dockable_probe.py
+```
+
 ## Slicer configuration
 
 ## Start gcode
